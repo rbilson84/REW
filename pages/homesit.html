@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+  <link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🦮 Retriever Energy Walks</title>
+ <meta name="description" content="Retriever energy walks, dog walking, dog boarding, group dog walks">
+  <meta name="keywords" content="dog, dog walking, puppy, dog walks">
+  <meta name="author" content="Rachel Bilson">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+ 
+  <header>
+   
+    <div class="logo-container">
+      <img src="../images/logorew1.png" alt="R-E-W Logo" class="logo">
+      
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+<!-- Navigation Section -->
+ 
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="walks.html">Walks & Pricing</a>
+      <a href="boarding.html">FAQ's</a>
+      <a href="homesit.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<!-- Main Content Section -->
+  <main>
+    <h1>A little glimpse into life at Retriever Energy Walks.</h1>
+    <p>From muddy paws to wagging tails and happy pack moments, this gallery captures the joy, adventure, and everyday magic of our walks around Ayr. Each photo is a small snapshot of the fun, friendships, and care that go into every outing — because nothing tells the story better than happy dogs doing what they love most. 🐾</p>
+
+   
+      
+      <div class="gallery-grid">
+
+        <div class="gallery-card">
+        <img src="../images/bernie1.jpg" alt="Bernie">
+        <h2>Bernie</h2>
+      </div>
+
+        <div class="gallery-card">
+        <img src="../images/images/Gilbert.jpg" alt="Gilbert">
+        <h2>Gilbert</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Kim.jpg" alt="Kim">
+        <h2>Kim</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Murphy2.jpg" alt="Murphy">
+        <h2>Murphy</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Rubble.jpg" alt="Rubble">
+        <h2>Rubble</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Rubble1.jpg" alt="Nala">
+        <h2>Nala</h2>
+      </div>
+
+       <div class="gallery-card">
+        <img src="../images/images/Scout Harper.jpg" alt="ScoutHarper">
+        <h2>Scout & Harper</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Thanos.jpg" alt="Thanos">
+        <h2>Thanos</h2>
+      </div>
+
+      <div class="gallery-card">
+        <img src="../images/images/Thor.jpg" alt="Thor">
+        <h2>Thor</h2>
+      </div>
+
+</div>
+    
+  </main>
+<!-- Footer Section -->
+  <footer>
+    <p>&copy; 2026 Retriever Energy Walks</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/retrieverenergywalks/" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="mailto:retrieverenergywalks@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+<!-- Mobile Hamburger Menu Code -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const icon = menuToggle.querySelector('i');
+
+  menuToggle.addEventListener('click', function () {
+    const isOpen = navLinks.classList.toggle('active');
+    // For accessibility
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (isOpen) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+  });
+});
+</script>
+</body>
+</html>
