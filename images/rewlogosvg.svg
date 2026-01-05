@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .dog-fur { fill: #f4b545; }
+      .dog-fur-shadow { fill: #e29e36; }
+      .dog-outline,
+      .face-detail { fill: #2b2414; }
+      .leash { fill: none; stroke: #3b5d38; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .leash-inner { fill: none; stroke: #8bb07a; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .tongue { fill: #f27b7f; }
+      .text,
+      .underline,
+      .paw { fill: #43552a; stroke: none; }
+      .text {
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+
+  <!-- Dog group -->
+  <g transform="translate(400,290)">
+    <!-- Body -->
+    <path class="dog-fur-shadow" d="M -170 140
+             Q -150 55 -95 25
+             Q 0 -10 95 25
+             Q 150 55 170 140
+             Q 120 175 0 195
+             Q -120 175 -170 140 Z"></path>
+    <!-- Head -->
+    <ellipse class="dog-fur" cx="0" cy="-20" rx="155" ry="135"></ellipse>
+    <!-- Chest highlight -->
+    <path class="dog-fur-shadow" d="M -60 60
+             Q 0 100 70 80
+             Q 45 115 0 130
+             Q -45 115 -60 60 Z"></path>
+    <!-- Left ear -->
+    <path class="dog-fur" d="M -105 -60
+             Q -165 -40 -160 30
+             Q -145 75 -115 90
+             Q -110 30 -105 -60 Z"></path>
+    <!-- Right ear -->
+    <path class="dog-fur" d="M 105 -60
+             Q 165 -40 160 30
+             Q 145 75 115 90
+             Q 110 30 105 -60 Z"></path>
+    <!-- Head outline -->
+    <ellipse cx="0" cy="-20" rx="155" ry="135" fill="none" stroke="#2b2414" stroke-width="6"></ellipse>
+
+    <!-- Eyes -->
+    <circle class="face-detail" cx="-55" cy="-45" r="12"></circle>
+    <circle class="face-detail" cx="55" cy="-45" r="12"></circle>
+    <circle cx="-50" cy="-48" r="4" fill="#ffffff"></circle>
+    <circle cx="60" cy="-48" r="4" fill="#ffffff"></circle>
+
+    <!-- Brows -->
+    <path d="M -80 -67 Q -55 -75 -35 -67" stroke="#2b2414" stroke-width="6" fill="none" stroke-linecap="round"></path>
+    <path d="M 80 -67 Q 55 -75 35 -67" stroke="#2b2414" stroke-width="6" fill="none" stroke-linecap="round"></path>
+
+    <!-- Nose -->
+    <path class="face-detail" d="M -15 -20
+             Q 0 -35 15 -20
+             Q 10 -5 0 -2
+             Q -10 -5 -15 -20 Z"></path>
+    <circle cx="5" cy="-24" r="3" fill="#15110b"></circle>
+
+    <!-- Smile -->
+    <path d="M -40 -5
+             Q 0 35 45 0" stroke="#2b2414" stroke-width="7" fill="none" stroke-linecap="round"></path>
+
+    <!-- Tongue -->
+    <path class="tongue" d="M 0 15
+             Q 25 40 10 60
+             Q 0 68 -10 60
+             Q -25 40 0 15 Z"></path>
+    <path d="M 0 15 Q 0 45 0 60" stroke="#d45a60" stroke-width="4" fill="none"></path>
+
+    <!-- Leash main -->
+    <path class="leash" d="M -150 80
+             Q -60 40 -5 15
+             Q 75 50 140 100"></path>
+    <path class="leash-inner" d="M -145 80
+             Q -60 43 -3 17
+             Q 70 53 135 98"></path>
+
+    <!-- Leash handle loop -->
+    <path class="leash" d="M -175 85
+             Q -210 100 -200 135
+             Q -190 165 -165 155
+             Q -150 145 -155 115
+             Q -160 95 -175 85 Z"></path>
+    <path class="leash-inner" d="M -175 90
+             Q -200 102 -192 130
+             Q -186 150 -167 145
+             Q -156 138 -160 115
+             Q -164 98 -175 90 Z"></path>
+
+    <!-- Leash into mouth -->
+    <path class="leash" d="M -5 15
+             Q -10 10 -18 8"></path>
+    <path class="leash-inner" d="M -4 16
+             Q -9 11 -16 9"></path>
+  </g>
+
+  <!-- Text + underline + paw -->
+  <g transform="translate(400,580)">
+    <text class="text" x="0" y="0" text-anchor="middle" font-size="52">
+      RETRIEVER
+    </text>
+    <text class="text" x="0" y="70" text-anchor="middle" font-size="52">
+      ENERGY WALKS
+    </text>
+
+    <!-- Underlines -->
+    <line x1="-220" y1="110" x2="-40" y2="110" class="underline" stroke="#43552a" stroke-width="6" stroke-linecap="round"></line>
+    <line x1="40" y1="110" x2="220" y2="110" class="underline" stroke="#43552a" stroke-width="6" stroke-linecap="round"></line>
+
+    <!-- Paw icon -->
+    <g class="paw" transform="translate(0,110)">
+      <circle cx="-14" cy="-10" r="7"></circle>
+      <circle cx="14" cy="-10" r="7"></circle>
+      <circle cx="-7" cy="-22" r="6"></circle>
+      <circle cx="7" cy="-22" r="6"></circle>
+      <path d="M -18 -5
+               Q 0 18 18 -5
+               Q 0 -2 -18 -5 Z"></path>
+    </g>
+  </g>
+</svg>
